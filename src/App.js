@@ -23,7 +23,7 @@ export const App = () => {
             appendedElements.push(clonned)
 
         }
-        const API = 'http://www.omdbapi.com/?apikey=aca568e3'
+        const API = 'https://www.omdbapi.com/?apikey=aca568e3'
         const response = await fetch(`${API}&s=${title}`);
         const data = await response.json();
         console.log(data);
